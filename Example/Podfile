@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+pre_install do |installer|
+# workaround for #3289
+Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+end
+
+target 'iOS Example' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for iOS Example
+  pod 'google-cast-sdk', '~>2.0'
+  pod 'GoogleHomeNotifier', :path => '../'
+
+end

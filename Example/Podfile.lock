@@ -1,0 +1,25 @@
+PODS:
+  - google-cast-sdk (2.10.4):
+    - google-cast-sdk/Assets (= 2.10.4)
+    - google-cast-sdk/Core (= 2.10.4)
+  - google-cast-sdk/Assets (2.10.4):
+    - google-cast-sdk/Core
+  - google-cast-sdk/Core (2.10.4)
+  - GoogleHomeNotifier (1.0.0):
+    - google-cast-sdk (= 2.10.4)
+
+DEPENDENCIES:
+  - google-cast-sdk (~> 2.0)
+  - GoogleHomeNotifier (from `../`)
+
+EXTERNAL SOURCES:
+  GoogleHomeNotifier:
+    :path: ../
+
+SPEC CHECKSUMS:
+  google-cast-sdk: eb83ef6b875969e765011c457b254539c0978792
+  GoogleHomeNotifier: 3edef3760a24b555b15d29f6773957b57bc847bd
+
+PODFILE CHECKSUM: 4bd09ee8a47cff1f912c8de9af38784651459f5f
+
+COCOAPODS: 1.3.1
